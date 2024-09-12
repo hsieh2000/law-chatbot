@@ -25,10 +25,10 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
     # Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
     # keep secrets safe.
 
-    instance_connection_name = "law-chatbot-431613:us-central1:law-db"
+    instance_connection_name = "law-chatbot-******:us-central1:law-db"
 
-    db_user = "admin"
-    db_pass = "admin"
+    db_user = "USER"
+    db_pass = "PASSWORD"
     db_name = "law-chatbot"
 
     ip_type = IPTypes.PRIVATE if os.environ.get("PRIVATE_IP") else IPTypes.PUBLIC
@@ -117,7 +117,7 @@ async def send(request: Request):
     # model = GenerativeModel("gemini-1.5-flash-001")
 
     # 連線google ai
-    genai.configure(api_key="AIzaSyBDyl6TNC3GgrjXymxy4EYcREM5uB27rVU")
+    genai.configure(api_key="YOUR_API_KEY")
     model = genai.GenerativeModel('gemini-1.5-flash')
 
 
