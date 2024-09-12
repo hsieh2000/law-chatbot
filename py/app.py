@@ -20,10 +20,10 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
     # Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
     # keep secrets safe.
 
-    instance_connection_name = "law-chatbot-431613:us-central1:law-db"
+    instance_connection_name = "law-chatbot-******:us-central1:law-db"
 
-    db_user = "admin"
-    db_pass = "admin"
+    db_user = "USER"
+    db_pass = "PASSWORD"
     db_name = "law-chatbot"
 
     ip_type = IPTypes.PRIVATE if os.environ.get("PRIVATE_IP") else IPTypes.PUBLIC
@@ -97,7 +97,7 @@ def send():
     print(court_opinion_seg)
 
     # 連線gemini
-    vertexai.init(project="law-chatbot-431613", location="us-central1")
+    vertexai.init(project="law-chatbot-******", location="us-central1")
     model = GenerativeModel("gemini-1.5-flash-001")
 
     response = model.generate_content(f"請閱讀以下法院見解後轉換為白話文告訴我這在說什麼，回答請限縮在100字內。\n法院見解：{court_opinion_seg}")
