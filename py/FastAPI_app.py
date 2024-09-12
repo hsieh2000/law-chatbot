@@ -59,7 +59,7 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
 @app.get("/")
 def read_root():
     # 連線google ai
-    genai.configure(api_key="AIzaSyBDyl6TNC3GgrjXymxy4EYcREM5uB27rVU")
+    genai.configure(api_key="YOUR_API_KRY")
     model = genai.GenerativeModel('gemini-1.5-flash')
     
     response = model.generate_content("自我介紹")
