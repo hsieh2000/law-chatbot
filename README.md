@@ -4,7 +4,6 @@
 
 I am honored to share my recent experience participating in the [2024 Legal-Tech Hackathon](https://lnkd.in/dU7bZmhj), where our team won two awards in the finals.
 
-
 During the competition, we developed a practical and convenient community management application. In addition to existing community features such as accounting, announcements, and delivery notifications, we also integrated AIGC technology with cloud services to create an intelligent legal agent. This well-designed system allows users to easily resolve legal compliance issues arising from condominium management regulations and address common simple legal disputes in the community through a conversational interface.
 
 This was my first time participating in a hackathon and my first experience collaborating across disciplines with legal professionals. I sincerely thank my teammates for dedicating their time after work and classes to help bring this project to fruition. I believe that winning these two awards is not only a recognition of our application but also a significant step towards realizing the personal goals of our team members. I hope to have more opportunities in the future to participate in hackathons, explore richer interdisciplinary technology applications, and connect with partners from different fields!
